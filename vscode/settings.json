@@ -7,5 +7,6 @@
         "transform": "camelcase"
     },
     "editor.fontSize": 14,
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.colorTheme": "Dracula"
 }
