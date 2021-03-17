@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "go.addTags": {
+        "options": "",
+        "promptForTags": true,
+        "transform": "camelcase"
+    },
+    "editor.fontSize": 14,
+    "go.toolsManagement.autoUpdate": true
+}
