@@ -69,6 +69,11 @@ function install_dotfiles
 		or abort ssh
 end
 
+for f in $DOTFILES/*/functions
+    echo $f
+	set -Up fish_function_path $f
+end
+
 curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
 	and success 'fisher'
 	or abort 'fisher'
