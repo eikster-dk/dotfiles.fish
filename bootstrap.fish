@@ -4,12 +4,6 @@
 
 set DOTFILES_ROOT (pwd -P)
 
-### general configuration
-set -Ux DOTFILES (PWD)
-set -Ux PROJECTS ~/code
-
-set -Ua fish_user_paths $DOTFILES/bin $HOME/.bin
-
 
 function info
 	echo [(set_color --bold) ' .. ' (set_color normal)] $argv
@@ -67,22 +61,6 @@ function install_dotfiles
 		or abort htoprc
 	link_file $DOTFILES_ROOT/ssh/config $HOME/.ssh/config local
 		or abort ssh
-end
-
-for f in $DOTFILES/*/functions
-	set skip false
-    for val in $fish_function_path
-        if [ "$val" = "$f" ]
-            set skip true
-        end
-    end
-
-    if not $skip
-        echo "setting up function path"
-        set -Up fish_function_path $f
-    else 
-        echo "skipping $f"
-    end
 end
 
 curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
