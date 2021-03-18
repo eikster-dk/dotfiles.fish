@@ -70,8 +70,19 @@ function install_dotfiles
 end
 
 for f in $DOTFILES/*/functions
-    echo $f
-	set -Up fish_function_path $f
+	set skip false
+    for val in $fish_function_path
+        if [ "$val" = "$f" ]
+            set skip true
+        end
+    end
+
+    if not $skip
+        echo "setting up function path"
+        set -Up fish_function_path $f
+    else 
+        echo "skipping $f"
+    end
 end
 
 curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
