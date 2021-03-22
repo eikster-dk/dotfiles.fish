@@ -4,7 +4,7 @@
 set -Ux DOTFILES (PWD)
 set -Ux PROJECTS ~/code
 
-set -Ux EDITOR code
+set -Ux EDITOR vim
 set -Ux VISUAL $EDITOR
 set -Ux WEDITOR code
 
