@@ -8,5 +8,6 @@
     },
     "editor.fontSize": 14,
     "go.toolsManagement.autoUpdate": true,
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "explorer.confirmDelete": false
 }
