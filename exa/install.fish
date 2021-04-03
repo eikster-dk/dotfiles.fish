@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 if command -qa exa
 	abbr -a ls 'exa'
+	abbr -a lsa 'exa --long --header --git -a'
 	abbr -a lg 'exa --git'
 	abbr -a l 'exa -lah'
 	abbr -a la 'exa -a'
