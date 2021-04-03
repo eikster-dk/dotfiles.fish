@@ -4547,8 +4547,8 @@
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
-                  "scancode": 40,
-                  "modifierMask": 12
+                  "scancode": 9,
+                  "modifierMask": 10
                 },
                 {
                   "keyActionType": "keystroke",
@@ -4691,10 +4691,22 @@
               "id": 1,
               "keyActions": [
                 null,
-                null,
-                null,
-                null,
-                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 3
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 2
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 0
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 1
+                },
                 null,
                 null,
                 null,
@@ -4857,7 +4869,10 @@
               "id": 1,
               "keyActions": [
                 null,
-                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 1
+                },
                 null,
                 null,
                 null,
@@ -6879,24 +6894,32 @@
   ],
   "macros": [
     {
-      "isLooped": true,
+      "isLooped": false,
       "isPrivate": true,
-      "name": "Go to UHK site in browser",
+      "name": "Open gitkraken",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 15,
-          "modifierMask": 1
+          "scancode": 44,
+          "modifierMask": 8
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
         },
         {
           "macroActionType": "text",
-          "text": "https://ultimatehackingkeyboard.com"
+          "text": "gitkraken"
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
         },
         {
           "macroActionType": "key",
-          "action": "tap",
+          "action": "press",
           "type": "basic",
           "scancode": 40
         }
@@ -6905,22 +6928,96 @@
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "God mode in Doom",
+      "name": "Open slack",
       "macroActions": [
         {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 44,
+          "modifierMask": 8
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
           "macroActionType": "text",
-          "text": "iddqd"
+          "text": "slack"
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
+          "macroActionType": "key",
+          "action": "press",
+          "type": "basic",
+          "scancode": 40
         }
       ]
     },
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Type Silent Bob's address",
+      "name": "Open terminal",
       "macroActions": [
         {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 44,
+          "modifierMask": 8
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
           "macroActionType": "text",
-          "text": "Silent Bob\n711-2880 Nulla St.\nMankato Mississippi 96522\n(257) 563-7401"
+          "text": "iterm"
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
+          "macroActionType": "key",
+          "action": "press",
+          "type": "basic",
+          "scancode": 40
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "Open vs code",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 44,
+          "modifierMask": 8
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
+          "macroActionType": "text",
+          "text": "code"
+        },
+        {
+          "macroActionType": "delay",
+          "delay": 100
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 40
         }
       ]
     }
