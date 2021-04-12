@@ -9,5 +9,6 @@
     "editor.fontSize": 14,
     "go.toolsManagement.autoUpdate": true,
     "workbench.colorTheme": "Dracula",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
 }
