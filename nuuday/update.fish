@@ -1,4 +1,4 @@
 #!/usr/bin/env fish
 
+oped "./nuuday/install.secret.fish" "dotfiles/nuuday/install.secret.fish"
 
-cat ./nuuday/install.secret.fish | op create document - --title "dotfiles/nuuday/install.secret.fish" --file-name "install.secret.fish"
