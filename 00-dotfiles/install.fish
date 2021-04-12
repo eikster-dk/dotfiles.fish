@@ -10,6 +10,7 @@ set -Ux WEDITOR code
 
 set -Ua fish_user_paths $DOTFILES/bin $HOME/.bin
 
+set -x OP_SESSION_my (op signin --raw)
 
 ### setup functions
 for f in $DOTFILES/*/functions
