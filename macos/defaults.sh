@@ -184,6 +184,10 @@ defaults write com.apple.dock autohide -bool true
 echo "  › Don't animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
 
+echo " > Set dock orientation to left side of the screen"
+defaults write com.apple.dock orientation left
+
+
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
