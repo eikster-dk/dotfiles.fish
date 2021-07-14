@@ -2,3 +2,5 @@
 # The following files contain your database credentials and other personal data.
 
 **/*.secret*
+
+.idea/
