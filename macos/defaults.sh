@@ -218,12 +218,12 @@ echo "› Media:"
 if [ -z "$KEEP_ITUNES" ]; then
 	echo "  › Disable iTunes helper"
 	disable_agent /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app
-	echo "  › Prevent play button from launching iTunes"
-	unload_agent /System/Library/LaunchAgents/com.apple.rcd.plist
+	# echo "  › Prevent play button from launching iTunes"
+	# unload_agent /System/Library/LaunchAgents/com.apple.rcd.plist
 fi
 
-# echo "  › Disable Spotify web helper"
-# disable_agent ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper
+echo "  › Disable Spotify web helper"
+disable_agent ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper
 
 #############################
 
