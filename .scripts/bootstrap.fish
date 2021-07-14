@@ -2,6 +2,16 @@
 #
 # bootstrap installs things.
 
+### general configuration
+set -Ux DOTFILES (PWD)
+set -Ux PROJECTS ~/code
+
+set -Ux EDITOR vim
+set -Ux VISUAL $EDITOR
+set -Ux WEDITOR code
+
+set -Ua fish_user_paths $DOTFILES/bin $HOME/.bin
+
 set DOTFILES_ROOT (pwd -P)
 
 source ./functions.fish
