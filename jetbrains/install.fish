@@ -1,3 +1,3 @@
 #!/usr/bin/env fish
 
-fish_add_path ~/jetbrains/
+set -Ua fish_user_paths ~/jetbrains/

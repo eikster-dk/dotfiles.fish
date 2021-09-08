@@ -4,3 +4,5 @@
 **/*.secret*
 
 .idea/
+
+.DS_Store
