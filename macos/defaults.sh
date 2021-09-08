@@ -211,19 +211,6 @@ sudo chflags uchg /private/var/vm/sleepimage
 echo "  ›  Disable the sudden motion sensor as it’s not useful for SSDs"
 sudo pmset -a sms 0
 
-#############################
-
-echo ""
-echo "› Media:"
-if [ -z "$KEEP_ITUNES" ]; then
-	echo "  › Disable iTunes helper"
-	disable_agent /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app
-	# echo "  › Prevent play button from launching iTunes"
-	# unload_agent /System/Library/LaunchAgents/com.apple.rcd.plist
-fi
-
-echo "  › Disable Spotify web helper"
-disable_agent ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper
 
 #############################
 
