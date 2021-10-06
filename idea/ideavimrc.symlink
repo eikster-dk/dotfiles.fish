@@ -1,0 +1,83 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set NERDTree
+set easymotion
+set numbers
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Mappings --------------------------------
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+
+""" split window
+nnoremap <leader>sv:action SplitVertically <CR>
+nnoremap <leader>sc :action UnsplitAll <CR>
+nnoremap <leader>v :action NextSplitter <CR>
+
+""" tabs
+nmap <leader>h :action PreviousTab<CR>
+nmap <leader>l :action NextTab<CR>
+nmap <leader>bd :action CloseEditor<CR>
+" nnoremap <leader>c :action CloseContent <CR>
+
+""" Debug commands
+map <leader>b <Action>(ToggleLineBreakpoint) <CR>
+map <leader>d <Action>(Debug)
+map <leader>c <Action>(Stop)
+"nmap <C-i> <Action>(StepInto)
+"nmap <C-h> <Action>(StepOut)
+"nmap <C-j><Action>(StepOver)
+"nmap <C-k><Action>(StepOver)
+"nmap <C-k><Action>(Resume)
+"StepOut
+
+
+""" Refactoring
+nnoremap <leader>ge :action Generate<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>em :action ExtractMethod  <Cr>
+vnoremap <leader>em :action ExtractMethod  <Cr>
+
+""" formatting
+nnoremap == :action ReformatCode <CR>
+vnoremap == :action ReformatCode <CR>
+nnoremap -- :action OptimizeImports <CR>
+vnoremap -- :action OptimizeImports <CR>
+
+nnoremap cc :action CommentByLineComment <CR>
+vnoremap cc :action CommentByLineComment <CR>
+
+""" Navigation Mappings --------------------------------
+nnoremap gh :action Back <CR>
+nnoremap gl :action Forward <CR>
+nnoremap gj :action MethodDown <CR>
+nnoremap gk :action MethodUp <CR>
+nnoremap gs :action GotoSuperMethod <CR>
+nnoremap gi :action GotoImplementation <CR>
+nnoremap gd :action GotoDeclaration <CR>
+
+nnoremap <leader>ww :action HideAllWindows <CR>
+
+nnoremap <leader>gt :action GotoTest <CR>
+
+nnoremap <leader>gp :NERDTreeFocus
+nnoremap <leader>gpt :NERDTreeToggle <CR>
+
+nnoremap <leader>gc :action GotoClass <CR>
+vnoremap <leader>gc :action GotoClass <CR>
+nnoremap <leader>gf :action GotoFile <CR>
+vnoremap <leader>gf :action GotoFile <CR>
+nnoremap ,a :action GotoAction <CR>
+vnoremap ,a :action GotoAction <CR>
+
+
