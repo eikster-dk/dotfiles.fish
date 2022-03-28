@@ -39,12 +39,15 @@ packer.init({
 -- bootstrap plugins
 return packer.startup(function()
 	use("wbthomason/packer.nvim") -- Package manager
+	use("lewis6991/impatient.nvim")
 
 	-- ui/ux
 	use("Mofiqul/dracula.nvim")
 	use("akinsho/bufferline.nvim")
 	use("akinsho/toggleterm.nvim")
 	use("kyazdani42/nvim-web-devicons")
+	use("kyazdani42/nvim-tree.lua")
+	use("nvim-lualine/lualine.nvim")
 
 	-- cmp
 	use("hrsh7th/nvim-cmp") -- The completion plugin
