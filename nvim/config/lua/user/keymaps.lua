@@ -70,7 +70,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- telescope
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>p", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>p", ":Telescope find_files hidden=true<CR>", opts)
 keymap("n", "<c-t>", ":Telescope live_grep<CR>", opts)
 
 -- LSP stuff

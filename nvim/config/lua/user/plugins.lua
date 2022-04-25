@@ -48,6 +48,7 @@ return packer.startup(function()
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("nvim-lualine/lualine.nvim")
+	use("folke/which-key.nvim")
 
 	-- cmp
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -66,6 +67,7 @@ return packer.startup(function()
 	use("nvim-lua/lsp-status.nvim")
 	use("williamboman/nvim-lsp-installer")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use("ray-x/lsp_signature.nvim")
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
