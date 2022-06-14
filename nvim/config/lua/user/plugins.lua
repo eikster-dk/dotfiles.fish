@@ -76,6 +76,10 @@ return packer.startup(function()
 	-- telescope
 	use("nvim-lua/plenary.nvim")
 	use("nvim-telescope/telescope.nvim")
+	use({
+		"nvim-telescope/telescope-fzf-native.nvim",
+		run = "make",
+	})
 
 	-- treesitter
 	use({
@@ -86,7 +90,6 @@ return packer.startup(function()
 	-- git
 	use("TimUntersberger/neogit")
 	use("lewis6991/gitsigns.nvim")
-	use("ThePrimeagen/git-worktree.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
