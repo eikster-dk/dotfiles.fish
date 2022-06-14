@@ -1,0 +1,20 @@
+# Plugins
+set -g @plugin 'dracula/tmux'
+
+
+#Configs
+set -g default-command /usr/local/bin/fish
+set -g default-shell /usr/local/bin/fish
+
+set -g default-terminal "xterm-256color"
+set -ga terminal-overrides ",*256col*:Tc"
+
+# vim-like pane switching
+bind -r k select-pane -U
+bind -r j select-pane -D
+bind -r h select-pane -L
+bind -r l select-pane -R
+
+#project navigation
+bind-key -r f run-shell "tmux neww tmux-sessionizer"
+bind-key -r g run-shell "tmux neww tmux-sessionizer main"
