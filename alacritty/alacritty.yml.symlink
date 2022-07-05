@@ -10,18 +10,6 @@ colors:
   primary:
     background: '0x1d2021'
 
-window:
-  padding:
-    x: 5
-    y: 5
-  dynamic_padding: true
-  opacity: 0.95
-  decorations: none
-  dynamic_title: true
-  dimensions:
-   columns: 240
-   lines: 80
-  startup_mode: Maximized
 
 scrolling:
   history: 10000
@@ -56,7 +44,9 @@ cursor:
 
 live_config_reload: true
 
+
 alt_send_esc: false
+
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 

@@ -2,5 +2,19 @@ Host *
   ServerAliveInterval 60
   StrictHostKeyChecking no
   UseKeychain yes
+  IdentityFile ~/.ssh/github
 
-Include ~/.ssh/config.local
+Host ssh.dev.azure.com
+   IdentityFile ~/.ssh/dev.azure.com
+   IdentitiesOnly yes
+
+Host y-id-bastion-non-prod
+   HostName bastion-yid-primary.non-prod.youseeid.nuuday.cloud
+   User ubuntu
+   IdentityFile ~/.ssh/ec2-instances-keypair-non-prod-account.pem
+
+Host y-id-bastion-prod
+   HostName bastion-yid-primary.prod.youseeid.nuuday.cloud
+   User ubuntu
+   IdentityFile ~/.ssh/ec2-instances-keypair-prod-account.pem
+
