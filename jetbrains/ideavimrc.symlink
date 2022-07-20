@@ -1,5 +1,0 @@
-""" Map leader to space ---------------------
-let mapleader=" "
-
-nnoremap <leader>p :action GotoFile<CR>
-nmap <leader>pc :action GotoClass<CR>

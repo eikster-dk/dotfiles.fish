@@ -1,7 +1,4 @@
 #!/usr/bin/env fish
-opg "dotfiles/aws/config" "./aws/config.secret"
-opg "dotfiles/aws/credentials" "./aws/credentials.secret"
-
 if not test -d ~/.aws 
     mkdir ~/.aws
     touch ~/.aws/config

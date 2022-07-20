@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -x OP_SESSION_my (op signin --raw)
-
 for f in $DOTFILES/*/conf.d/*.fish
 	ln -sf $f ~/.config/fish/conf.d/(basename $f)
 end

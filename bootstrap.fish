@@ -9,10 +9,14 @@ set -Ux PROJECTS ~/code
 set -Ux EDITOR vim
 set -Ux VISUAL $EDITOR
 set -Ux WEDITOR code
+set -Ux XDG_CONFIG_HOME ~/.config
 
 set -Ua fish_user_paths $DOTFILES/bin $HOME/.bin
 
 set DOTFILES_ROOT (pwd -P)
+
+### code structure
+mkdir $PROJECTS/freelance $PROJECTS/personal
 
 source ./functions.fish
 
