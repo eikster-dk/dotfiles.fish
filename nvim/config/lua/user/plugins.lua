@@ -44,7 +44,6 @@ return packer.startup(function()
 	-- ui/ux
 	use("Mofiqul/dracula.nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
-	--use("akinsho/toggleterm.nvim")
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("nvim-lualine/lualine.nvim")
@@ -111,7 +110,12 @@ return packer.startup(function()
 
 	-- git
 	use("TimUntersberger/neogit")
-	use("lewis6991/gitsigns.nvim")
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("user.gitsigns")
+		end,
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
