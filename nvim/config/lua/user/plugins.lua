@@ -69,6 +69,19 @@ return packer.startup(function()
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("ray-x/lsp_signature.nvim")
 
+	-- debug
+	use({
+		"mfussenegger/nvim-dap",
+		config = function()
+			require("user.debug")
+		end,
+		requires = {
+			"leoluz/nvim-dap-go",
+			"rcarriga/nvim-dap-ui",
+			"theHamsta/nvim-dap-virtual-text",
+		},
+	})
+
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
