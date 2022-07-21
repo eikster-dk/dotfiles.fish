@@ -82,6 +82,14 @@ return packer.startup(function()
 		},
 	})
 
+	-- trouble
+	use({
+		"folke/trouble.nvim",
+		config = function()
+			require("user.trouble")
+		end,
+	})
+
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
