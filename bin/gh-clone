@@ -1,0 +1,19 @@
+#!/usr/bin/env fish
+
+set repo (string split / $argv[1])[2]
+if test -z $repo 
+  set repo $argv[1]
+end
+
+set project $PROJECTS/$argv[2]/$repo
+
+gh worktree clone $argv[1] $project
+
+if type -q zoxide
+  zoxide add $project
+end 
+
+if type -q tmux
+  tmux new-session -ds $repo -c $project
+  tmux switch-client -t $repo
+end
