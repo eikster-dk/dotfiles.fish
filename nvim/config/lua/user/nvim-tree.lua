@@ -7,6 +7,11 @@ tree.setup({
 	view = {
 		side = "left",
 	},
+	actions = {
+		open_file = {
+			quit_on_open = true,
+		},
+	},
 })
 
 local r = require("user.remap").nnoremap
