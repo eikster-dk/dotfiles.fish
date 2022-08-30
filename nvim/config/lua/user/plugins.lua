@@ -42,7 +42,13 @@ return packer.startup(function()
 	use("lewis6991/impatient.nvim")
 
 	-- ui/ux
-	use("Mofiqul/dracula.nvim")
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+		config = function()
+			require("user.colorscheme")
+		end,
+	})
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("nvim-lualine/lualine.nvim")

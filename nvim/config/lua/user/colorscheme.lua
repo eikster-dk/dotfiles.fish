@@ -1,8 +1,5 @@
-local ok, _ = pcall(require, "dracula")
-if not ok then
-	return
-end
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 
-vim.cmd([[
-colorscheme dracula
-]])
+require("catppuccin").setup()
+
+vim.cmd([[colorscheme catppuccin]])

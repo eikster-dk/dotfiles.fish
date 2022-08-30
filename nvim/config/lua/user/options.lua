@@ -34,7 +34,7 @@ local options = {
 	sidescrolloff = 8,
 	guifont = "monospace:h17", -- the font used in graphical neovim applications
 	list = true,
-	listchars = "eol:↲,tab:» ,trail:·,extends:<,precedes:>,conceal:┊,nbsp:␣",
+	listchars = "eol:↲,tab:» ,trail:·,extends:<,precedes:>,conceal:┊,nbsp:␣,space:.",
 }
 
 vim.opt.shortmess:append("c")
