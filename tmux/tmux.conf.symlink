@@ -41,7 +41,7 @@ bind i split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
 
 #project navigation
-bind-key -r f run-shell "tmux neww tmux-sessionizer"
+bind-key -r f display-popup -E "tmux-sessionizer"
 bind-key -r g run-shell "tmux neww tmux-sessionizer main"
 
 
