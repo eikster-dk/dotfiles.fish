@@ -1,3 +1,6 @@
 #!/usr/bin/env fish
 
-set -Ux FZF_DEFAULT_OPTS "--color fg:255,bg:236,hl:84,fg+:255,bg+:236,hl+:215 --color info:141,prompt:84,spinner:212,pointer:212,marker:212"
+set -Ux FZF_DEFAULT_OPTS "\
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
