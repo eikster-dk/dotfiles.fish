@@ -46,7 +46,7 @@ bind-key -r g run-shell "tmux neww tmux-sessionizer main"
 
 
 # --> Catppuccin (Mocha)
-thm_bg="#11111b"
+thm_bg="#1E1E2E"
 thm_fg="#cdd6f4"
 thm_cyan="#89dceb"
 thm_black="#181825"

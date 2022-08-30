@@ -1,46 +1,7 @@
-env:
-  TERM: xterm-256color
-
-scrolling:
-  history: 10000
-  multiplier: 3
-  auto_scroll: false
-
-tabspaces: 4
-
-bell:
-  duration: 100
-  color: '#22212C'
-  command:
-    program: afplay
-    args: ["/System/Library/Sounds/Tink.aiff"]
-
-font:
-  normal:
-    family: Hack Nerd Font
-  bold:
-    family: Hack Nerd Font
-  italic:
-    family: Hack Nerd Font
-  bold_italic:
-    family: Hack Nerd Font
-  size: 14.0
-  use_thin_strokes: true
-
-cursor:
-  style:
-    shape: Beam
-    blinking: On
-
-live_config_reload: true
-
-
-alt_send_esc: false
-
-mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
-
 color_schemes:
+
+
+
   latte: &latte
 
     # Default colors
