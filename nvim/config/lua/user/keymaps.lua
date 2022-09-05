@@ -70,6 +70,4 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- LSP stuff
 keymap("n", "<leader>f", ":Format<cr>", opts)
-
--- terminal
-keymap("n", "<leader>trm", ":ToggleTerm<CR>", opts)
+keymap("n", "<leader>w", ":update<cr>", opts)
