@@ -105,9 +105,9 @@ M.on_attach = function(client, bufnr)
 	end
 
 	if client.name == "sumneko_lua" then
-		client.server_capabilities.document_formatting = false -- 0.7 and earlier
-		client.server_capabilities.document_formatting = false -- 0.7 and earlier
-		-- client.server_capabilities.documentFormattingProvider = false -- 0.8 and later
+		-- client.server_capabilities.document_formatting = false -- 0.7 and earlier
+		-- client.server_capabilities.document_formatting = false -- 0.7 and earlier
+		client.server_capabilities.documentFormattingProvider = false -- 0.8 and later
 	end
 
 	lsp_keymaps(bufnr)
