@@ -6,7 +6,6 @@ end
 configs.setup({
 	ensure_installed = {
 		"bash",
-		"c_sharp",
 		"css",
 		"dockerfile",
 		"fish",
@@ -29,7 +28,6 @@ configs.setup({
 		"toml",
 		"typescript",
 		"vim",
-		"vue",
 		"yaml",
 	},
 	sync_install = false,

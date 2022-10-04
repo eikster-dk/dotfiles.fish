@@ -12,7 +12,7 @@ null_ls.setup({
 	capabilities = require("user.lsp.handlers").capabilities,
 	on_attach = function(client, bufnr)
 		-- lspstatus.on_attach(client, bufnr)
-		if client.resolved_capabilities.document_formatting then
+		if client.server_capabilities.document_formatting then
 			vim.cmd([[
 				augroup LspFormatting
 				autocmd! * <buffer>
