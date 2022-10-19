@@ -7,6 +7,7 @@ require("mason-lspconfig").setup({
 })
 
 local on_attach = function(client, bufnr)
+  print(tostring(client.name))
 	local function buf_set_keymap(...)
 		vim.api.nvim_buf_set_keymap(bufnr, ...)
 	end
@@ -31,6 +32,11 @@ end
 
 local lspconfig = require("lspconfig")
 local capabilities = cmp_nvim_lsp.default_capabilities()
+
+lspconfig.rust_analyzer.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 lspconfig.gopls.setup({
 	capabilities = capabilities,

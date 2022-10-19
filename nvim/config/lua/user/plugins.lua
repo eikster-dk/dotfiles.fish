@@ -87,7 +87,7 @@ return packer.startup(function()
 			"numToStr/Comment.nvim",
 
       -- language tools
-      "simrat39/rust-tools.nvim",
+      -- "simrat39/rust-tools.nvim",
 
 			-- snippets
 			-- todo: figure out which snippet tool I want to use
@@ -99,7 +99,6 @@ return packer.startup(function()
 			require("user.autopairs")
 			require("user.lsp")
 			require("user.cmp")
-      require("user.rust")
 		end,
 	})
 	-- debug

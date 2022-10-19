@@ -2,7 +2,12 @@ local cmp = require("cmp")
 local luasnip = require("luasnip")
 
 cmp.setup({
-	window = {
+		snippet = {
+		expand = function(args)
+			luasnip.lsp_expand(args.body)
+		end,
+	},
+  window = {
 		documentation = cmp.config.window.bordered(),
 		completion = {
 			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
