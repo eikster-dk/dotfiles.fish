@@ -60,25 +60,48 @@ return packer.startup(function()
 		end,
 	})
 
-	-- cmp
-	use("hrsh7th/nvim-cmp") -- The completion plugin
-	use("hrsh7th/cmp-buffer") -- buffer completions
-	use("hrsh7th/cmp-path") -- path completions
-	use("hrsh7th/cmp-cmdline") -- cmdline completions
-	use("saadparwaiz1/cmp_luasnip") -- snippet completions
-	use("hrsh7th/cmp-nvim-lsp") -- cmp lsp completions
-	use("hrsh7th/cmp-nvim-lua")
-	use("windwp/nvim-autopairs")
-	use("numToStr/Comment.nvim")
+	-- lsp, cmp & snippets
+	use({
+		"williamboman/mason.nvim",
+		requires = {
+			-- lsp
+			"williamboman/mason-lspconfig.nvim",
+			"onsails/lspkind-nvim",
+			"neovim/nvim-lspconfig",
+			"jose-elias-alvarez/null-ls.nvim",
+			"nvim-lua/lsp-status.nvim",
+			"ray-x/lsp_signature.nvim",
 
-	-- lsp
-	use("onsails/lspkind-nvim")
-	use("neovim/nvim-lspconfig")
-	use("nvim-lua/lsp-status.nvim")
-	use("williamboman/nvim-lsp-installer")
-	use("jose-elias-alvarez/null-ls.nvim")
-	use("ray-x/lsp_signature.nvim")
+			-- cmp
+			"hrsh7th/nvim-cmp",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-emoji",
+			"hrsh7th/cmp-calc",
+			"windwp/nvim-autopairs",
 
+			-- cmp & lsp
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-nvim-lsp-signature-help",
+			"numToStr/Comment.nvim",
+
+      -- language tools
+      "simrat39/rust-tools.nvim",
+
+			-- snippets
+			-- todo: figure out which snippet tool I want to use
+			"L3MON4D3/LuaSnip",
+			"rafamadriz/friendly-snippets",
+		},
+		config = function()
+			require("lspkind").init()
+			require("user.autopairs")
+			require("user.lsp")
+			require("user.cmp")
+      require("user.rust")
+		end,
+	})
 	-- debug
 	use({
 		"mfussenegger/nvim-dap",
@@ -101,8 +124,6 @@ return packer.startup(function()
 	})
 
 	-- snippets
-	use("L3MON4D3/LuaSnip") --snippet engine
-	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 	-- telescope
 	use("nvim-lua/plenary.nvim")
