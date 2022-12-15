@@ -12,7 +12,7 @@ local actions = require("telescope.actions")
 telescope.setup({})
 telescope.load_extension("fzf")
 
-local r = require("user.remap").nnoremap
+local r = require("eikster.remap").nnoremap
 
 r("<leader>ff", ":Telescope find_files<CR>")
 r("<leader>fg", ":Telescope git_files<CR>")

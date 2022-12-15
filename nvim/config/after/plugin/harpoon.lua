@@ -1,6 +1,6 @@
 local harpoon = require("harpoon")
 
-local r = require("user.remap").nnoremap
+local r = require("eikster.remap").nnoremap
 
 harpoon.setup({})
 
