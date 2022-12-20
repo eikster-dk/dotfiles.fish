@@ -73,75 +73,8 @@ return packer.startup(function(use)
     })
 
     use("folke/zen-mode.nvim")
-    use("github/copilot.vim") -- use("lewis6991/impatient.nvim")
-    -- use("kyazdani42/nvim-web-devicons")
-    -- use("kyazdani42/nvim-tree.lua")
-    -- use("nvim-lualine/lualine.nvim")
-    -- use("folke/which-key.nvim")
-    --lsp, cmp & snippets
-    -- use({
-    -- 	"williamboman/mason.nvim",
-    -- 	requires = {
-    -- 		-- lsp
-    -- 		"williamboman/mason-lspconfig.nvim",
-    -- 		"onsails/lspkind-nvim",
-    -- 		"neovim/nvim-lspconfig",
-    -- 		"jose-elias-alvarez/null-ls.nvim",
-    -- 		"nvim-lua/lsp-status.nvim",
-    -- 		"ray-x/lsp_signature.nvim",
+    use("github/copilot.vim")  -- pretty funny to use
     --
-    -- 		-- cmp
-    -- 		"hrsh7th/nvim-cmp",
-    -- 		"hrsh7th/cmp-buffer",
-    -- 		"hrsh7th/cmp-path",
-    -- 		"hrsh7th/cmp-cmdline",
-    -- 		"hrsh7th/cmp-emoji",
-    -- 		"hrsh7th/cmp-calc",
-    -- 		"windwp/nvim-autopairs",
-    --
-    -- 		-- cmp & lsp
-    -- 		"hrsh7th/cmp-nvim-lsp",
-    -- 		"hrsh7th/cmp-nvim-lsp-signature-help",
-    -- 		"numToStr/Comment.nvim",
-    --
-    -- 		-- hints
-    -- 		"simrat39/inlay-hints.nvim",
-    --
-    -- 		-- snippets
-    -- 		-- todo: figure out which snippet tool I want to use
-    -- 		"L3MON4D3/LuaSnip",
-    -- 		"rafamadriz/friendly-snippets",
-    -- 	},
-    -- 	config = function()
-    -- 		require("lspkind").init()
-    -- 		require("user.autopairs")
-    -- 		require("user.lsp")
-    -- 		require("user.cmp")
-    -- 	end,
-    -- })
-    -- debug
-    -- use({
-    -- 	"mfussenegger/nvim-dap",
-    -- 	config = function()
-    -- 		require("user.debug")
-    -- 	end,
-    -- 	requires = {
-    -- 		"leoluz/nvim-dap-go",
-    -- 		"rcarriga/nvim-dap-ui",
-    -- 		"theHamsta/nvim-dap-virtual-text",
-    -- 	},
-    -- })
-
-    -- trouble
-    -- use({
-    -- 	"folke/trouble.nvim",
-    -- 	config = function()
-    -- 		require("user.trouble")
-    -- 	end,
-    -- })
-
-    -- snippets
-
     -- telescope
     use("nvim-lua/plenary.nvim")
     use("nvim-telescope/telescope.nvim")
@@ -156,19 +89,8 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     })
+    use('nvim-treesitter/playground')
 
-    -- git
-    -- use("TimUntersberger/neogit")
-    -- use({
-    -- 	"lewis6991/gitsigns.nvim",
-    -- 	config = function()
-    -- 		require("user.gitsigns")
-    -- 	end,
-    -- })
-
-    -- Automatically set up your configuration after cloning packer.nvim
-    -- Put this at the end after all plugins
-    if PACKER_BOOTSTRAP then
-        require("packer").sync()
-    end
+    use('mbbill/undotree')
+    use('tpope/vim-fugitive')
 end)

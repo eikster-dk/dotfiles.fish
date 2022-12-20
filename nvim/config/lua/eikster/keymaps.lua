@@ -1,12 +1,4 @@
-local opts = { noremap = true, silent = true }
-
-local term_opts = { silent = true }
-
--- Shorten function name
-local keymap = vim.api.nvim_set_keymap
-
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -22,34 +14,34 @@ vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
 
 -- Normal --
 -- disable Ex mode, I always enter in it by mistake
-keymap("n", "Q", "<Nop>", opts)
-
+vim.keymap.set("n", "Q", "<Nop>")
 -- Half page up and down movements & center
-keymap("n", "<C-u>", "<C-u>zz", opts)
-keymap("n", "<C-d>", "<C-d>zz", opts)
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+vim.keymap.set("i", "jk", "<ESC>")
 
--- Visual --
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
--- Visual Block --
--- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- potential remaps
+-- vim.keymap.set("n", "J", "mzJ`z")
 
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- LSP stuff
-keymap("n", "<leader>f", ":Format<cr>", opts)
-keymap("n", "<leader>w", ":update<cr>", opts)
+-- good search/replace and chmod+x : thanks theprimeagen
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>f", ":Format<cr>")
+vim.keymap.set("n", "<leader>w", ":update<cr>")

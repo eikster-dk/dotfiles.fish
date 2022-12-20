@@ -63,6 +63,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
     vim.keymap.set("n", "<leader>gl", vim.diagnostic.open_float, opts)
     vim.keymap.set("n", "<leader>lr", vim.cmd.LspRestart, opts)
+    vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true }) end, opts)
 end)
 
 lsp.setup()
