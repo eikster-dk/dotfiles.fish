@@ -39,3 +39,8 @@ abbr -a gms 'git switch (git main-branch); and git sync'
 abbr -a egms 'e; git switch (git main-branch); and git sync'
 abbr -a gwc 'git switch -c'
 abbr -a gclean 'git branch | egrep -v "master|main" | xargs git branch -D'
+
+# worktree related
+abbr -a gwr 'git worktree remove'
+abbr -a gwa 'git worktree add'
+abbr -a gwls 'git worktree list'
