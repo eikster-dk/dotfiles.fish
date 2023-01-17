@@ -1,5 +1,13 @@
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup({
+    transparent_background = true,
+})
 
-require("catppuccin").setup()
+function ColorMyPencils(color)
+    color = color or "catppuccin"
+    vim.cmd.colorscheme(color)
 
-vim.cmd([[colorscheme catppuccin]])
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+ColorMyPencils()
+
