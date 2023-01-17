@@ -44,3 +44,9 @@ abbr -a gclean 'git branch | egrep -v "master|main" | xargs git branch -D'
 abbr -a gwr 'git worktree remove'
 abbr -a gwa 'git worktree add'
 abbr -a gwls 'git worktree list'
+
+# lazygit
+
+if command -qs lazygit
+    abbr -a 'gui' 'lazygit'
+end
