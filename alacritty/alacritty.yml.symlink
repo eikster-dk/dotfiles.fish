@@ -24,8 +24,11 @@ font:
     family: Hack Nerd Font
   bold_italic:
     family: Hack Nerd Font
-  size: 14.0
+  size: 16.0
   use_thin_strokes: true
+
+window:
+  opacity: 0.9
 
 cursor:
   style:
@@ -39,6 +42,10 @@ alt_send_esc: false
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
+
+key_bindings:
+  - { key: Space, mods: Control, chars: "\x00" }
+
 
 color_schemes:
   latte: &latte
