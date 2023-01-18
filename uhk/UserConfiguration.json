@@ -1,12 +1,12 @@
 {
-  "userConfigMajorVersion": 4,
+  "userConfigMajorVersion": 5,
   "userConfigMinorVersion": 0,
   "userConfigPatchVersion": 0,
   "deviceName": "My UHK",
   "doubleTapSwitchLayerTimeout": 250,
-  "iconsAndLayerTextsBrightness": 255,
+  "iconsAndLayerTextsBrightness": 253,
   "alphanumericSegmentsBrightness": 255,
-  "keyBacklightBrightness": 255,
+  "keyBacklightBrightness": 0,
   "mouseMoveInitialSpeed": 128,
   "mouseMoveAcceleration": 128,
   "mouseMoveDeceleratedSpeed": 60,
@@ -26,6 +26,7 @@
       "description": "QWERTY is the mother of all layouts. This is the Mac version.",
       "layers": [
         {
+          "id": "base",
           "modules": [
             {
               "id": 0,
@@ -275,7 +276,7 @@
                 },
                 {
                   "keyActionType": "switchLayer",
-                  "layer": "mouse",
+                  "layer": "fn2",
                   "switchLayerMode": "hold"
                 },
                 {
@@ -421,6 +422,7 @@
           ]
         },
         {
+          "id": "mod",
           "modules": [
             {
               "id": 0,
@@ -463,39 +465,26 @@
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
-                  "scancode": 74
+                  "scancode": 80,
+                  "modifierMask": 12
+                },
+                {
+                  "keyActionType": "keystroke",
+                  "type": "basic",
+                  "scancode": 23,
+                  "modifierMask": 8
+                },
+                {
+                  "keyActionType": "keystroke",
+                  "type": "basic",
+                  "scancode": 79,
+                  "modifierMask": 12
                 },
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 77
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 76
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 70
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 71
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 72
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 75
-                },
+                null,
+                null,
+                null,
+                null,
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
@@ -511,11 +500,7 @@
                   "type": "basic",
                   "scancode": 79
                 },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 73
-                },
+                null,
                 null,
                 null,
                 {
@@ -523,19 +508,16 @@
                   "type": "basic",
                   "scancode": 80
                 },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 41
-                },
-                null,
-                null,
                 null,
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
-                  "scancode": 101
+                  "scancode": 26,
+                  "modifierMask": 8
                 },
+                null,
+                null,
+                null,
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
@@ -601,36 +583,12 @@
                   "scancode": 63
                 },
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 41
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 80,
-                  "modifierMask": 12
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 23,
-                  "modifierMask": 8
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 79,
-                  "modifierMask": 12
-                },
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 17,
-                  "modifierMask": 8
-                },
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 {
                   "keyActionType": "keystroke",
@@ -638,31 +596,11 @@
                   "scancode": 57,
                   "modifierMask": 1
                 },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 80,
-                  "modifierMask": 1
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 43,
-                  "modifierMask": 8
-                },
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 79,
-                  "modifierMask": 1
-                },
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 9,
-                  "modifierMask": 10
-                },
+                null,
+                null,
+                null,
+                null,
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
@@ -671,19 +609,9 @@
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 26,
-                  "modifierMask": 8
-                },
                 null,
-                {
-                  "keyActionType": "keystroke",
-                  "type": "basic",
-                  "scancode": 5,
-                  "modifierMask": 10
-                },
+                null,
+                null,
                 {
                   "keyActionType": "keystroke",
                   "type": "basic",
@@ -757,6 +685,7 @@
           ]
         },
         {
+          "id": "fn",
           "modules": [
             {
               "id": 0,
@@ -1008,6 +937,7 @@
           ]
         },
         {
+          "id": "mouse",
           "modules": [
             {
               "id": 0,
@@ -1019,45 +949,21 @@
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "scrollLeft"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "moveUp"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "scrollRight"
-                },
                 null,
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "scrollDown"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "moveLeft"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "moveDown"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "moveRight"
-                },
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "scrollUp"
-                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -1095,10 +1001,6 @@
               "id": 1,
               "keyActions": [
                 null,
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 1
-                },
                 null,
                 null,
                 null,
@@ -1111,24 +1013,12 @@
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "switchLayer",
-                  "layer": "mouse",
-                  "switchLayerMode": "hold"
-                },
                 null,
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "rightClick"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "middleClick"
-                },
-                {
-                  "keyActionType": "mouse",
-                  "mouseAction": "leftClick"
-                },
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -1211,6 +1101,158 @@
               ]
             }
           ]
+        },
+        {
+          "id": "fn2",
+          "modules": [
+            {
+              "id": 0,
+              "keyActions": [
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 1
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 2
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 3
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 4
+                },
+                null,
+                null,
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 0
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 7
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 5
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 2
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 3
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 4
+                },
+                null,
+                null,
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 1
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "keyActions": [
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 9
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 10
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 11
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 12
+                },
+                null,
+                null,
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 1
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 2
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 3
+                },
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 4
+                },
+                null,
+                null,
+                {
+                  "keyActionType": "switchLayer",
+                  "layer": "fn2",
+                  "switchLayerMode": "hold"
+                },
+                null,
+                null,
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 6
+                },
+                null,
+                {
+                  "keyActionType": "playMacro",
+                  "macroIndex": 8
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "keyActions": [
+                null,
+                null
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fn3",
+          "modules": [
+            {
+              "id": 0,
+              "keyActions": []
+            },
+            {
+              "id": 1,
+              "keyActions": []
+            },
+            {
+              "id": 3,
+              "keyActions": [
+                null,
+                null
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1221,6 +1263,7 @@
       "description": "QWERTY is the mother of all layouts. This is the Mac version.",
       "layers": [
         {
+          "id": "base",
           "modules": [
             {
               "id": 0,
@@ -1616,6 +1659,7 @@
           ]
         },
         {
+          "id": "mod",
           "modules": [
             {
               "id": 0,
@@ -1956,6 +2000,7 @@
           ]
         },
         {
+          "id": "fn",
           "modules": [
             {
               "id": 0,
@@ -2048,22 +2093,10 @@
               "id": 1,
               "keyActions": [
                 null,
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 3
-                },
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 2
-                },
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 0
-                },
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 1
-                },
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -2184,6 +2217,7 @@
           ]
         },
         {
+          "id": "mouse",
           "modules": [
             {
               "id": 0,
@@ -2271,10 +2305,7 @@
               "id": 1,
               "keyActions": [
                 null,
-                {
-                  "keyActionType": "playMacro",
-                  "macroIndex": 1
-                },
+                null,
                 null,
                 null,
                 null,
@@ -2397,6 +2428,7 @@
       "description": "QWERTY is the mother of all layouts. This is the PC version.",
       "layers": [
         {
+          "id": "base",
           "modules": [
             {
               "id": 0,
@@ -2790,6 +2822,7 @@
           ]
         },
         {
+          "id": "mod",
           "modules": [
             {
               "id": 0,
@@ -3134,6 +3167,7 @@
           ]
         },
         {
+          "id": "fn",
           "modules": [
             {
               "id": 0,
@@ -3350,6 +3384,7 @@
           ]
         },
         {
+          "id": "mouse",
           "modules": [
             {
               "id": 0,
@@ -3560,6 +3595,7 @@
       "description": "This keymap is only used for factory testing purposes.",
       "layers": [
         {
+          "id": "base",
           "modules": [
             {
               "id": 0,
@@ -3953,6 +3989,7 @@
           ]
         },
         {
+          "id": "mod",
           "modules": [
             {
               "id": 0,
@@ -4284,6 +4321,7 @@
           ]
         },
         {
+          "id": "fn",
           "modules": [
             {
               "id": 0,
@@ -4479,6 +4517,7 @@
           ]
         },
         {
+          "id": "mouse",
           "modules": [
             {
               "id": 0,
@@ -4683,142 +4722,290 @@
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Open gitkraken",
+      "name": "harpoon - add file",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 44,
-          "modifierMask": 8
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
-        },
-        {
-          "macroActionType": "text",
-          "text": "gitkraken"
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
+          "scancode": 44
         },
         {
           "macroActionType": "key",
-          "action": "press",
+          "action": "tap",
           "type": "basic",
-          "scancode": 40
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 4
         }
       ]
     },
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Open slack",
+      "name": "harpoon - navigate 1",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 44,
-          "modifierMask": 8
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
-        },
-        {
-          "macroActionType": "text",
-          "text": "slack"
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
+          "scancode": 44
         },
         {
           "macroActionType": "key",
-          "action": "press",
+          "action": "tap",
           "type": "basic",
-          "scancode": 40
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 30
         }
       ]
     },
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Open terminal",
+      "name": "harpoon - navigate 2",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 44,
-          "modifierMask": 8
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
-        },
-        {
-          "macroActionType": "text",
-          "text": "iterm"
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
+          "scancode": 44
         },
         {
           "macroActionType": "key",
-          "action": "press",
+          "action": "tap",
           "type": "basic",
-          "scancode": 40
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 31
         }
       ]
     },
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Open vs code",
+      "name": "harpoon - navigate 3",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 44,
-          "modifierMask": 8
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
-        },
-        {
-          "macroActionType": "text",
-          "text": "code"
-        },
-        {
-          "macroActionType": "delay",
-          "delay": 100
+          "scancode": 44
         },
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 40
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 32
         }
       ]
     },
     {
       "isLooped": false,
       "isPrivate": true,
-      "name": "Tilde macro",
+      "name": "harpoon - navigate 4",
       "macroActions": [
         {
           "macroActionType": "key",
           "action": "tap",
           "type": "basic",
-          "scancode": 48,
-          "modifierMask": 8
+          "scancode": 44
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 33
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "harpoon - open explorer",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 44
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 11
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 8
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "Open tmux repo selector",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 9
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "tmux new tab",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 6
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "Tmux open main",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 10
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "tmux tab 1",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 30
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "tmux tab 2",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 31
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "tmux tab 3",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 32
+        }
+      ]
+    },
+    {
+      "isLooped": false,
+      "isPrivate": true,
+      "name": "tmux tab 4",
+      "macroActions": [
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 5,
+          "modifierMask": 1
+        },
+        {
+          "macroActionType": "key",
+          "action": "tap",
+          "type": "basic",
+          "scancode": 33
         }
       ]
     }
