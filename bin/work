@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+
+
+timer 45m && osascript -e 'display notification "Work timer up!" with title "Pomodoro timer" subtitle "Work timer is up, take a break" sound name "crystal"'
+
